@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const init = async () => {
-  const res = await axios.get(`${TGapi}/setWebhook`, {
+  const res = await axios.get(`${TGapi}/deleteWebhook`, {
     params: { url: WEBHOOK_URL },
   });
 };
